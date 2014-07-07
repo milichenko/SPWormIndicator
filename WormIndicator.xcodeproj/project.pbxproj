@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F26A4BA196A7ADD0067B88A /* SPWormIndicatorLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F26A4B9196A7ADD0067B88A /* SPWormIndicatorLayer.m */; };
+		0F26A4BD196ABDA20067B88A /* SPRandomizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F26A4BC196ABDA20067B88A /* SPRandomizeViewController.m */; };
 		63A592F619669F2200902859 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A592F519669F2200902859 /* Foundation.framework */; };
 		63A592F819669F2200902859 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A592F719669F2200902859 /* CoreGraphics.framework */; };
 		63A592FA19669F2200902859 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A592F919669F2200902859 /* UIKit.framework */; };
@@ -39,6 +40,8 @@
 /* Begin PBXFileReference section */
 		0F26A4B8196A7ADD0067B88A /* SPWormIndicatorLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPWormIndicatorLayer.h; sourceTree = "<group>"; };
 		0F26A4B9196A7ADD0067B88A /* SPWormIndicatorLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPWormIndicatorLayer.m; sourceTree = "<group>"; };
+		0F26A4BB196ABDA20067B88A /* SPRandomizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPRandomizeViewController.h; sourceTree = "<group>"; };
+		0F26A4BC196ABDA20067B88A /* SPRandomizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPRandomizeViewController.m; sourceTree = "<group>"; };
 		63A592F219669F2200902859 /* WormIndicator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WormIndicator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63A592F519669F2200902859 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		63A592F719669F2200902859 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -134,6 +137,8 @@
 				63A5938C1966CBBD00902859 /* SPWormIndicator.m */,
 				0F26A4B8196A7ADD0067B88A /* SPWormIndicatorLayer.h */,
 				0F26A4B9196A7ADD0067B88A /* SPWormIndicatorLayer.m */,
+				0F26A4BB196ABDA20067B88A /* SPRandomizeViewController.h */,
+				0F26A4BC196ABDA20067B88A /* SPRandomizeViewController.m */,
 			);
 			path = WormIndicator;
 			sourceTree = "<group>";
@@ -266,6 +271,7 @@
 			files = (
 				63A593871966C79700902859 /* SPRootViewController.m in Sources */,
 				63A5930219669F2200902859 /* main.m in Sources */,
+				0F26A4BD196ABDA20067B88A /* SPRandomizeViewController.m in Sources */,
 				63A5938A1966C81C00902859 /* SPPageContentViewController.m in Sources */,
 				0F26A4BA196A7ADD0067B88A /* SPWormIndicatorLayer.m in Sources */,
 				63A5930619669F2200902859 /* SPAppDelegate.m in Sources */,
