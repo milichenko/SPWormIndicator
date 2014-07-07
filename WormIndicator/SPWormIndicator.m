@@ -16,6 +16,18 @@
     return [SPWormIndicatorLayer class];
 }
 
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+    
+    if (self)
+    {
+        self.layer.contentsScale = [[UIScreen mainScreen] scale];
+    }
+    
+    return self;
+}
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [self initWithFrame:frame withBackgroundColor:[UIColor whiteColor] foregroundColor:[UIColor blackColor]];
@@ -31,8 +43,6 @@
     {
         self.indicatorBackgroundColor = backgroundColor;
         self.indicatorForegroundColor = foregroundColor;
-        self.opaque = NO;
-        self.clipsToBounds = YES;
         self.layer.contentsScale = [[UIScreen mainScreen] scale];
         [self.layer setNeedsDisplay];
     }
