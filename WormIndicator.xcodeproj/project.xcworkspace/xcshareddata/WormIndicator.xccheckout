@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A1658E35-CED9-4ADF-B613-A1491F275EAD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>WormIndicator</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>907DA389-2F43-4009-99E4-6CB9FAD3152B</key>
+		<string>https://github.com/milichenko/SPWormIndicator</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>WormIndicator.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>907DA389-2F43-4009-99E4-6CB9FAD3152B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/milichenko/SPWormIndicator</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>907DA389-2F43-4009-99E4-6CB9FAD3152B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>907DA389-2F43-4009-99E4-6CB9FAD3152B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SPWormIndicator</string>
+		</dict>
+	</array>
+</dict>
+</plist>

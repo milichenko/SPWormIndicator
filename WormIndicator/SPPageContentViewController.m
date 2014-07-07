@@ -12,6 +12,7 @@
 @interface SPPageContentViewController ()
 
 @property (weak, nonatomic) IBOutlet SPWormIndicator *wormIndicator;
+@property (weak, nonatomic) IBOutlet UISlider *progressSlider;
 
 @end
 
@@ -55,13 +56,21 @@
     
     self.wormIndicator.indicatorBackgroundColor = [UIColor colorWithRed:221 / 255.0f green:220 / 255.0f blue:231 / 255.0f alpha:1.0f];
     self.wormIndicator.indicatorForegroundColor = indicatorForegroundColor;
-    self.wormIndicator.value = 0.25f;
+    self.wormIndicator.progressValue = self.progressSlider.value;
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - IBAction
+
+- (IBAction)progressSliderAction:(id)sender
+{
+    self.wormIndicator.progressValue = self.progressSlider.value;
+    [self.wormIndicator setNeedsDisplay];
 }
 
 @end

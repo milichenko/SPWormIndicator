@@ -8,11 +8,9 @@
 
 @import UIKit;
 
-#define WORM_INDICATOR_STANDART_SIZE 56.0f
-
 @interface SPWormIndicator : UIView
 
-@property (assign, nonatomic) CGFloat value;
+@property (assign, nonatomic) CGFloat progressValue;
 
 @property (strong, nonatomic) UIColor *indicatorBackgroundColor;
 @property (strong, nonatomic) UIColor *indicatorForegroundColor;

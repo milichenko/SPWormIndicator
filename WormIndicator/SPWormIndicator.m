@@ -7,10 +7,14 @@
 //
 
 #import "SPWormIndicator.h"
-
-#define WORM_STANDART_LINE_WIDTH 7.5f;
+#import "SPWormIndicatorLayer.h"
 
 @implementation SPWormIndicator
+
++ (Class)layerClass
+{
+    return [SPWormIndicatorLayer class];
+}
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -27,47 +31,27 @@
     {
         self.indicatorBackgroundColor = backgroundColor;
         self.indicatorForegroundColor = foregroundColor;
+        self.opaque = NO;
+        self.clipsToBounds = YES;
+        self.layer.contentsScale = [[UIScreen mainScreen] scale];
+        [self.layer setNeedsDisplay];
     }
     
     return self;
 }
 
-- (void)drawRect:(CGRect)rect
+- (CGFloat)progressValue
 {
-    CGContextRef ctx = UIGraphicsGetCurrentContext();
-    
-    CGPoint center = CGPointMake(rect.size.width / 2.0f, rect.size.height / 2.0f);
-    CGFloat minSize = MIN(rect.size.width, rect.size.height);
-    
-    CGFloat sizePercents = minSize / WORM_INDICATOR_STANDART_SIZE;
-    
-    CGFloat lineWidth = sizePercents * WORM_STANDART_LINE_WIDTH;
-    CGFloat radius = (minSize - lineWidth) / 2.0f;
-    
-    CGContextSaveGState(ctx);
-    CGContextTranslateCTM(ctx, center.x, center.y);
-    CGContextRotateCTM(ctx, -M_PI * 0.5);
-    
-    CGContextSetLineWidth(ctx, lineWidth);
-    CGContextSetLineCap(ctx, kCGLineCapRound);
-    
-    CGFloat endAngle = M_PI * 2.0f;
-    
-    CGContextBeginPath(ctx);
-    
-    CGContextAddArc(ctx, 0.0f, 0.0f, radius, 0.0f, endAngle, 0);
-    
-    CGContextSetStrokeColorWithColor(ctx, self.indicatorBackgroundColor.CGColor);
-    CGContextStrokePath(ctx);
-    
-    CGContextBeginPath(ctx);
-    
-    CGContextAddArc(ctx, 0.0f, 0.0f, radius, 0.0f, endAngle * self.value, 0);
-    
-    CGContextSetStrokeColorWithColor(ctx, self.indicatorForegroundColor.CGColor);
-    CGContextStrokePath(ctx);
+    SPWormIndicatorLayer *layer = (SPWormIndicatorLayer *)self.layer;
+    return layer.progressValue;
+}
 
-    CGContextRestoreGState(ctx);
+- (void)setProgressValue:(CGFloat)progressValue
+{
+    SPWormIndicatorLayer *layer = (SPWormIndicatorLayer *)self.layer;
+    layer.progressValue = progressValue;
+    layer.indicatorBackgroundColor = self.indicatorBackgroundColor;
+    layer.indicatorForegroundColor = self.indicatorForegroundColor;
 }
 
 @end
