@@ -30,12 +30,12 @@
 
 - (id)initWithFrame:(CGRect)frame
 {
-    self = [self initWithFrame:frame withBackgroundColor:[UIColor whiteColor] foregroundColor:[UIColor blackColor]];
+    self = [self initWithFrame:frame backgroundColor:[UIColor whiteColor] foregroundColor:[UIColor blackColor]];
     
     return self;
 }
 
-- (id)initWithFrame:(CGRect)frame withBackgroundColor:(UIColor *)backgroundColor foregroundColor:(UIColor *)foregroundColor
+- (id)initWithFrame:(CGRect)frame backgroundColor:(UIColor *)backgroundColor foregroundColor:(UIColor *)foregroundColor
 {
     self = [super initWithFrame:frame];
     

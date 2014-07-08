@@ -15,6 +15,6 @@
 @property (strong, nonatomic) UIColor *indicatorBackgroundColor;
 @property (strong, nonatomic) UIColor *indicatorForegroundColor;
 
-- (id)initWithFrame:(CGRect)frame withBackgroundColor:(UIColor *)backgroundColor foregroundColor:(UIColor *)foregroundColor;
+- (id)initWithFrame:(CGRect)frame backgroundColor:(UIColor *)backgroundColor foregroundColor:(UIColor *)foregroundColor;
 
 @end
