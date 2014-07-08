@@ -9,7 +9,7 @@
 #import "SPWormIndicatorLayer.h"
 
 #define WORM_INDICATOR_STANDART_SIZE 56.0f
-#define WORM_STANDART_LINE_WIDTH 7.5f;
+#define WORM_INDICATOR_STANDART_LINE_WIDTH 7.5f;
 
 @implementation SPWormIndicatorLayer
 
@@ -51,7 +51,7 @@
     
     CGFloat sizePercents = minSize / WORM_INDICATOR_STANDART_SIZE;
     
-    CGFloat lineWidth = sizePercents * WORM_STANDART_LINE_WIDTH;
+    CGFloat lineWidth = sizePercents * WORM_INDICATOR_STANDART_LINE_WIDTH;
     CGFloat radius = (minSize - lineWidth) / 2.0f;
     
     CGContextSaveGState(ctx);
