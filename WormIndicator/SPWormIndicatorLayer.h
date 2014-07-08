@@ -8,9 +8,6 @@
 
 #import <QuartzCore/QuartzCore.h>
 
-#define WORM_INDICATOR_STANDART_SIZE 56.0f
-#define WORM_STANDART_LINE_WIDTH 7.5f;
-
 @interface SPWormIndicatorLayer : CALayer
 
 @property (strong, nonatomic) UIColor *indicatorBackgroundColor;

@@ -8,6 +8,9 @@
 
 #import "SPWormIndicatorLayer.h"
 
+#define WORM_INDICATOR_STANDART_SIZE 56.0f
+#define WORM_STANDART_LINE_WIDTH 7.5f;
+
 @implementation SPWormIndicatorLayer
 
 @dynamic progressValue;
